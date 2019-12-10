@@ -13,7 +13,7 @@ export const getMarsCuriosityPhotos = () => {
 };
 export const getMarsOpportunityPhotos = () => {
   return fetch(
-    "https://api.nasa.gov/mars-photos/api/v1/rovers/Opportunity/photos?sol=1000&api_key=6fhOuvKRWYsgnfBFSjW6dB7SKIelpbVhu70eHHio"
+    "https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=1000&api_key=6fhOuvKRWYsgnfBFSjW6dB7SKIelpbVhu70eHHio"
   )
     .then(response => response.json())
     .then(parsedData => {
@@ -22,7 +22,7 @@ export const getMarsOpportunityPhotos = () => {
 };
 export const getMarsSpiritPhotos = () => {
   return fetch(
-    "https://api.nasa.gov/mars-photos/api/v1/rovers/Spirit/photos?sol=1000&api_key=6fhOuvKRWYsgnfBFSjW6dB7SKIelpbVhu70eHHio"
+    "https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=1000&api_key=6fhOuvKRWYsgnfBFSjW6dB7SKIelpbVhu70eHHio"
   )
     .then(response => response.json())
     .then(parsedData => {
