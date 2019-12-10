@@ -9,11 +9,27 @@ body {
   justify-content: space-evenly;
 }
 .mars-component {
-  margin: auto;
+  padding: 4px;
 }
-.size-of-picture {
+.photo-of-the-day-explanation {
+  padding: 2em;
+  margin: 2em;
+}
+.mars-main {
+  text-align: center;
+  margin: 50px;
+}
+.mars-video-of-the-day-size {
+  width: 500px;
+  height: 300px;
+}
+.size-of-mars-picture-cards {
   max-width: 300px;
   max-height: 200px;
   height: 200px;
   width: 200px;
+}
+.title {
+  text-align: center;
+  font-size: 3em;
 }

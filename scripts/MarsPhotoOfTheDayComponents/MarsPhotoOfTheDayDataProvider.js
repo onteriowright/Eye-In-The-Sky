@@ -1,6 +1,7 @@
-let marsDataCollection = [];
+let marsPhotoOrVideoOfTheDayDataCollection = [];
 
-export const useMarsPhotoOfTheDay = () => marsDataCollection;
+export const useMarsPhotoOfTheDay = () =>
+  marsPhotoOrVideoOfTheDayDataCollection;
 
 export const getMarsPhotoOfTheDay = () => {
   return fetch(
@@ -8,7 +9,6 @@ export const getMarsPhotoOfTheDay = () => {
   )
     .then(response => response.json())
     .then(parsedData => {
-      console.log(parsedData);
-      marsDataCollection = parsedData;
+      marsPhotoOrVideoOfTheDayDataCollection = parsedData;
     });
 };

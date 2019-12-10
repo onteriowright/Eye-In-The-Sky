@@ -1,6 +1,6 @@
-let marsDataCollection = [];
+let marsPhotosDataCollection = [];
 
-export const useMarsData = () => marsDataCollection;
+export const useMarsPhotosData = () => marsPhotosDataCollection;
 
 export const getMarsCuriosityPhotos = () => {
   return fetch(
@@ -8,7 +8,7 @@ export const getMarsCuriosityPhotos = () => {
   )
     .then(response => response.json())
     .then(parsedData => {
-      marsDataCollection = parsedData;
+      marsPhotosDataCollection = parsedData;
     });
 };
 export const getMarsOpportunityPhotos = () => {
@@ -17,7 +17,7 @@ export const getMarsOpportunityPhotos = () => {
   )
     .then(response => response.json())
     .then(parsedData => {
-      marsDataCollection = parsedData;
+      marsPhotosDataCollection = parsedData;
     });
 };
 export const getMarsSpiritPhotos = () => {
@@ -26,6 +26,6 @@ export const getMarsSpiritPhotos = () => {
   )
     .then(response => response.json())
     .then(parsedData => {
-      marsDataCollection = parsedData;
+      marsPhotosDataCollection = parsedData;
     });
 };

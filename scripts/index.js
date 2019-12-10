@@ -2,12 +2,12 @@ import {
   getMarsCuriosityPhotos,
   getMarsOpportunityPhotos,
   getMarsSpiritPhotos
-} from "./AllMarsPhotos/MarsPhotoDataProvider.js";
-import MarsListComponent from "./AllMarsPhotos/MarsListComponent.js";
-import MarsPhotoOfTheDayListComponent from "./MarsPhotoOfTheDay/MarsPhotoOfTheDayListComponent.js";
-import { getMarsPhotoOfTheDay } from "./MarsPhotoOfTheDay/MarsPhotoOfTheDayDataProvider.js";
+} from "./AllMarsPhotosComponents/MarsPhotosDataProvider.js";
+import { getMarsPhotoOfTheDay } from "./MarsPhotoOfTheDayComponents/MarsPhotoOfTheDayDataProvider.js";
+import MarsPhotosListComponent from "./AllMarsPhotosComponents/MarsPhotosListComponent.js";
+import MarsPhotoOfTheDayListComponent from "./MarsPhotoOfTheDayComponents/MarsPhotoOfTheDayListComponent.js";
 
-getMarsCuriosityPhotos().then(MarsListComponent);
-getMarsOpportunityPhotos().then(MarsListComponent);
-getMarsSpiritPhotos().then(MarsListComponent);
+getMarsCuriosityPhotos().then(MarsPhotosListComponent);
+getMarsOpportunityPhotos().then(MarsPhotosListComponent);
+getMarsSpiritPhotos().then(MarsPhotosListComponent);
 getMarsPhotoOfTheDay().then(MarsPhotoOfTheDayListComponent);
