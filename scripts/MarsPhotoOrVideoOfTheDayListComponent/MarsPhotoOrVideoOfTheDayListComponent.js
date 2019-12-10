@@ -1,8 +1,8 @@
-import MarsPhotoOfTheDayComponent from "./MarsPhotoOfTheDayComponent.js";
+import MarsPhotoOfTheDayComponent from "../MarsPhotoOfTheDayComponents/MarsPhotoOfTheDayComponent.js";
 import MarsVideoOfTheDayComponent from "../MarsVideoOfTheDayComponents/MarsVideoOfTheDayComponent.js";
-import { useMarsPhotoOfTheDay } from "./MarsPhotoOfTheDayDataProvider.js";
+import { useMarsPhotoOfTheDay } from "../MarsPhotoOrVideoOfTheDayDataProvider/MarsPhotoOrVideoOfTheDayDataProvider.js";
 
-const MarsPhotoOfTheDayListComponent = () => {
+const MarsPhotoOrVideoOfTheDayListComponent = () => {
   const photoOfTheDayHTML = document.querySelector("#marsPhotoOfTheDay");
   const useMarsPhotos = useMarsPhotoOfTheDay();
 
@@ -12,7 +12,8 @@ const MarsPhotoOfTheDayListComponent = () => {
       <h2>Photo Of The Day</h2>
       <h4>Date: ${useMarsPhotos.date}</h4>
       <div>${MarsPhotoOfTheDayComponent(useMarsPhotos)}</div>
-      <h4>Title: ${useMarsPhotos.title}</h4>
+      <h4>Copyright: ${useMarsPhotos.copyright}</h4>
+      <h3>Title: ${useMarsPhotos.title}</h3>
       <p class="photo-of-the-day-explanation">
         <h3>Explanation For Photo Of The Day:</h3>
         <div>${useMarsPhotos.explanation}</div>
@@ -35,4 +36,4 @@ const MarsPhotoOfTheDayListComponent = () => {
   }
 };
 
-export default MarsPhotoOfTheDayListComponent;
+export default MarsPhotoOrVideoOfTheDayListComponent;
