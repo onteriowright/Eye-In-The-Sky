@@ -1,9 +1,9 @@
 let marsPhotoOrVideoOfTheDayDataCollection = [];
 
-export const useMarsPhotoOfTheDay = () =>
+export const useMarsPhotoOrVideoOfTheDay = () =>
   marsPhotoOrVideoOfTheDayDataCollection;
 
-export const getMarsPhotoOfTheDay = () => {
+export const getMarsPhotoOrVideoOfTheDay = () => {
   return fetch(
     "https://api.nasa.gov/planetary/apod?api_key=6fhOuvKRWYsgnfBFSjW6dB7SKIelpbVhu70eHHio"
   )

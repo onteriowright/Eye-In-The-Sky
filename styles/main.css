@@ -11,10 +11,6 @@ body {
 .mars-component {
   padding: 4px;
 }
-.photo-of-the-day-explanation {
-  padding: 2em;
-  margin: 2em;
-}
 .mars-main {
   text-align: center;
   margin: 50px;
@@ -26,6 +22,10 @@ body {
 .mars-video-of-the-day-size {
   width: 800px;
   height: 500px;
+}
+.photo-of-the-day-explanation {
+  padding: 2em;
+  margin: 2em;
 }
 .size-of-mars-picture-cards {
   max-width: 300px;
