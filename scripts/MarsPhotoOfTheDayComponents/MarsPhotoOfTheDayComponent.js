@@ -1,7 +1,7 @@
 const MarsPhotoOfTheDayComponent = photo => {
   return `
     <section class="mars-photo-of-the-day">
-      <h2>Photo Of The Day</h2>
+      <h2 class="title-of-the-day">Astronomy Photo Of The Day</h2>
       <h4>Date: ${photo.date}</h4>
       <div>
         <img class="mars-photo-of-the-day-size" src="${photo.hdurl}">

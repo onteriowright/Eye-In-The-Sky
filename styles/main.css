@@ -1,7 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
+
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background: #304352; /* fallback for old browsers */
+  background: #525252; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3d72b4,
+    #525252
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3d72b4,
+    #525252
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  font-family: "Julius Sans One", sans-serif;
 }
 .main {
   display: flex;
@@ -10,6 +27,8 @@ body {
 }
 .mars-component {
   padding: 4px;
+  margin: 10px;
+  font-size: 13px;
 }
 .mars-main {
   text-align: center;
@@ -18,22 +37,32 @@ body {
 .mars-photo-of-the-day-size {
   width: 800px;
   height: 500px;
+  border: 1px dotted;
 }
 .mars-video-of-the-day-size {
   width: 800px;
   height: 500px;
+  border: 1px dotted;
 }
 .photo-of-the-day-explanation {
   padding: 2em;
   margin: 2em;
 }
+.photo-info {
+  margin: 2px;
+  padding: 1px;
+}
 .size-of-mars-picture-cards {
   max-width: 300px;
   max-height: 200px;
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
+  border: 1px dotted;
 }
 .title {
   text-align: center;
   font-size: 3em;
+  font-family: "Rock Salt", cursive;
 }
+/* .title-of-the-day {
+} */

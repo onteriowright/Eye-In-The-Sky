@@ -1,7 +1,7 @@
 const MarsVideoOfTheDayComponent = video => {
   return `
     <section class="photo-of-the-day">
-    <h2>Video Of The Day</h2>
+    <h2 class="title-of-the-day">Astronomy Video Of The Day</h2>
       <h4>Date: ${video.date}</h4>
       <div>
         <iframe class="mars-video-of-the-day-size" src="${video.url}"></iframe>
