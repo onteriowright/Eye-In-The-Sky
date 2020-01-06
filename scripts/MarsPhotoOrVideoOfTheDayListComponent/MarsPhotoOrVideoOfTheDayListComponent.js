@@ -19,7 +19,7 @@ const MarsPhotoOrVideoOfTheDayListComponent = () => {
     <section class="mars-main">
       <div>
         ${MarsVideoOfTheDayComponent(useMarsPhotos)}
-      </div>
+      </div> 
     </section>
     `;
   }
