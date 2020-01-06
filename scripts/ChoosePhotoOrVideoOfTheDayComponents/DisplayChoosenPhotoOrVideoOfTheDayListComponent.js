@@ -3,6 +3,7 @@ import {
   UseChosenPhoto
 } from "./ChoosePhotoOrVideoOfTheDayDataProvider.js";
 import MarsPhotoOfTheDayComponent from "../MarsPhotoOfTheDayComponents/MarsPhotoOfTheDayComponent.js";
+import MarsVideoOfTheDayComponent from "../MarsVideoOfTheDayComponents/MarsVideoOfTheDayComponent.js";
 
 export const DisplayChoosenPhotoOrVideoOfTheDayListComponent = () => {
   const eventHub = document.querySelector("#main");
@@ -13,7 +14,6 @@ export const DisplayChoosenPhotoOrVideoOfTheDayListComponent = () => {
       const currentDate = document.querySelector("#chooseDate").value;
       choosePhoto(currentDate).then(() => {
         const useChosenPhoto = UseChosenPhoto();
-
         if (useChosenPhoto.media_type === "image") {
           targetElement.innerHTML = `
           <section class="mars-main">
