@@ -64,5 +64,7 @@ body {
   font-size: 3em;
   font-family: "Rock Salt", cursive;
 }
-/* .title-of-the-day {
-} */
+.date {
+  position: relative;
+  left: 15px;
+}
