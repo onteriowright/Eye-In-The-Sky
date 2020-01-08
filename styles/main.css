@@ -19,15 +19,16 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   font-family: "Julius Sans One", sans-serif;
+  width: 98%;
 }
 .main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .mars-component {
   padding: 4px;
-  margin: 10px;
+  margin: 8px;
   font-size: 13px;
 }
 .mars-main {
